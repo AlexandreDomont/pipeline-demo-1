@@ -1,3 +1,5 @@
+library("godotenv")
+
 
 pipeline {
 
@@ -32,7 +34,7 @@ pipeline {
             steps {
 
 
-		sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
+		 // sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
 
                 // Compiler le programme Go
 
