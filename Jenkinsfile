@@ -1,6 +1,3 @@
-import (
-    "github.com/joho/godotenv"
-)
 
 pipeline {
 
@@ -36,6 +33,7 @@ pipeline {
 
 
 		 sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
+		 sh "go get github.com/joho/godotenv"
 
                 // Compiler le programme Go
 
