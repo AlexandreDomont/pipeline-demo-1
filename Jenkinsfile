@@ -43,7 +43,7 @@ pipeline {
 
                 // Lancer les tests unitaires
 
-                sh "go test -v"
+                sh "go test ./..."
 
  
 
