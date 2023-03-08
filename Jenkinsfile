@@ -32,7 +32,7 @@ pipeline {
             steps {
 
 
-		 sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
+//		 sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
 		 sh "go get github.com/joho/godotenv"
 
                 // Compiler le programme Go
@@ -43,7 +43,7 @@ pipeline {
 
                 // Lancer les tests unitaires
 
-                sh "go test -v"
+                sh "go test ./..."
 
  
 
