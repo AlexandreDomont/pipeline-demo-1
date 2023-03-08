@@ -1,3 +1,5 @@
+library("godotenv")
+
 pipeline {
 
     agent any
