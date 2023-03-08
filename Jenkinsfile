@@ -2,6 +2,16 @@ pipeline {
 
     agent any
 
+
+	environment {
+        	GO111MODULE = 'auto'
+		py2Ana="0"	
+		TAG_NAME="1"
+    	}	
+	tools {
+		go 'go-1.20.1'
+	}
+
      stages {
 	stage('Checkout') {
 
