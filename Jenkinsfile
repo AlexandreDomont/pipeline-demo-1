@@ -1,4 +1,3 @@
-library("godotenv")
 
 pipeline {
 
@@ -31,6 +30,9 @@ pipeline {
         stage('Build and Test') {
 
             steps {
+
+
+		sh "go install github.com/joho/godotenv/cmd/godotenv@latest"
 
                 // Compiler le programme Go
 
